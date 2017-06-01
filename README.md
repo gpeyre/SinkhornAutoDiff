@@ -4,11 +4,11 @@ SinkhornAutoDiff - Python toolbox to integrate optimal transport loss functions 
 Overview
 ------
 
-Python toolbox to compute and differentiate Optimal Transport (OT) distances. It computes the cost using (generalization of) Sinkhorn's algorithm, which can in turn be applied:
-- To optimize barycenters and their weights.
-- To perform shape matching.
-- As a loss between machine learning features.
-- To perform density fitting for generative model.
+Python toolbox to compute and differentiate Optimal Transport (OT) distances. It computes the cost using (generalization of) Sinkhorn's algorithm [1], which can in turn be applied:
+- To optimize barycenters and their weights [2].
+- To perform shape registration [9].
+- As a loss between machine learning features [1].
+- To perform density fitting for generative model [8].
 
 Organization
 ------
@@ -61,7 +61,7 @@ References:
 
 [10] G. Peyré, L. Chizat, F-X. Vialard, J. Solomon. Quantum Optimal Transport for Tensor Field Processing. Preprint Arxiv:1612.08731, 2016.
 
-Authors:
+Authors
 ------
 
 - Gwendoline de Bie (ENS)
@@ -73,5 +73,10 @@ Authors:
 - [Francois-Xavier Vialard](https://www.ceremade.dauphine.fr/~vialard/) (Paris-Dauphine)
 - ...
 
+Links
+------
+
+- [Python Optimal Transport library](https://github.com/rflamary/POT)
+- [Mathematical coffees: Optimal Transport Meets Machine Learning](https://mathematical-coffees.github.io/mc01-ot/)
 
 Copyright (c) 2017 Noria's team

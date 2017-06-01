@@ -52,7 +52,7 @@ References:
 9. Optimal Transport for Diffeomorphic Registration, Jean Feydy, Benjamin Charlier, Francois-Xavier Vialard, Gabriel Peyré, MICCAI 2017.
 10. G. Peyré, L. Chizat, F-X. Vialard, J. Solomon. Quantum Optimal Transport for Tensor Field Processing. Preprint Arxiv:1612.08731, 2016.
 
-References:
+Authors:
 ------
 
 - Gwendoline de Bie (ENS)

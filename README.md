@@ -41,8 +41,8 @@ Current implementations are available using the following automatic-differentiat
 References:
 ------
 
-[1] Marco Cuturi,  Sinkhorn Distances: Lightspeed Computation of Optimal Transport, NIPS 2013
-[2] N. Bonneel, G. Peyré, M. Cuturi. Wasserstein Barycentric Coordinates: Histogram Regression Using Optimal Transport. ACM Transactions on Graphics (Proc. SIGGRAPH 2016), 35(4), pp. 71:1–71:10, 2016.
+1. Marco Cuturi,  Sinkhorn Distances: Lightspeed Computation of Optimal Transport, NIPS 2013
+2. N. Bonneel, G. Peyré, M. Cuturi. Wasserstein Barycentric Coordinates: Histogram Regression Using Optimal Transport. ACM Transactions on Graphics (Proc. SIGGRAPH 2016), 35(4), pp. 71:1–71:10, 2016.
 3. A. Rolet, M. Cuturi, G. Peyré. Fast Dictionary Learning with a Smoothed Wasserstein Loss. In Proc. AISTATS'16, pp. 630–638, 2016.
 4. G. Peyré, M. Cuturi, J. Solomon. Gromov-Wasserstein Averaging of Kernel and Distance Matrices. In Proc. ICML'16, pp. 2664–2672, 2016.
 5. J. Solomon, F. de Goes, G. Peyré, M. Cuturi, A. Butscher, A. Nguyen, T. Du, L. Guibas. Convolutional Wasserstein Distances: Efficient Optimal Transportation on Geometric Domains. ACM Transactions on Graphics (Proc. SIGGRAPH 2015), 34(4), pp. 66:1–66:11, 2015.

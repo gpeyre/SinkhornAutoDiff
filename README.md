@@ -11,7 +11,7 @@ Python toolbox to compute and differentiate Optimal Transport (OT) distances. It
 - To perform density fitting for generative model [8] (see also image bellow).
 
 
-<img src="img/fig-general.jpg" alt="Typical example of usage: Sinkhorn for density fitting" align="middle" style='height: 80%; width: 80%; object-fit: contain'/>
+<img src="img/fig-general.jpg" alt="Typical example of usage: Sinkhorn for density fitting" align="middle" style='height: 60%; width: 60%; object-fit: contain'/>
 
 Organization
 ------

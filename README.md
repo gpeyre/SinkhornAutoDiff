@@ -10,14 +10,14 @@ Python toolbox to compute and differentiate Optimal Transport (OT) distances. It
 - As a loss between machine learning features.
 - To perform density fitting for generative model.
 
+Organization
 ------
-Organization:
 
 - code/ contains the core routine to compute OT losses and their differentials.
 - notebooks/ contains a collection of [Jupyter notebooks](http://jupyter.org/) that showcase simple usage of the toolbox.
 
+Planed Features
 ------
-Planed Features:
 
 - Classical Sinkhorn using matrix/vector multiplications [1].
 - Acceleration for separable kernels (e.g. Gaussian kernels for images) [5].
@@ -38,11 +38,11 @@ Current implementations are available using the following automatic-differentiat
 - [TensorFlow](https://www.tensorflow.org/)
 - [Chainer](https://chainer.org/)
 
-------
 References:
+------
 
-1. Marco Cuturi,  Sinkhorn Distances: Lightspeed Computation of Optimal Transport, NIPS 2013
-2. N. Bonneel, G. Peyré, M. Cuturi. Wasserstein Barycentric Coordinates: Histogram Regression Using Optimal Transport. ACM Transactions on Graphics (Proc. SIGGRAPH 2016), 35(4), pp. 71:1–71:10, 2016.
+[1] Marco Cuturi,  Sinkhorn Distances: Lightspeed Computation of Optimal Transport, NIPS 2013
+[2] N. Bonneel, G. Peyré, M. Cuturi. Wasserstein Barycentric Coordinates: Histogram Regression Using Optimal Transport. ACM Transactions on Graphics (Proc. SIGGRAPH 2016), 35(4), pp. 71:1–71:10, 2016.
 3. A. Rolet, M. Cuturi, G. Peyré. Fast Dictionary Learning with a Smoothed Wasserstein Loss. In Proc. AISTATS'16, pp. 630–638, 2016.
 4. G. Peyré, M. Cuturi, J. Solomon. Gromov-Wasserstein Averaging of Kernel and Distance Matrices. In Proc. ICML'16, pp. 2664–2672, 2016.
 5. J. Solomon, F. de Goes, G. Peyré, M. Cuturi, A. Butscher, A. Nguyen, T. Du, L. Guibas. Convolutional Wasserstein Distances: Efficient Optimal Transportation on Geometric Domains. ACM Transactions on Graphics (Proc. SIGGRAPH 2015), 34(4), pp. 66:1–66:11, 2015.
@@ -52,8 +52,8 @@ References:
 9. Optimal Transport for Diffeomorphic Registration, Jean Feydy, Benjamin Charlier, Francois-Xavier Vialard, Gabriel Peyré, MICCAI 2017.
 10. G. Peyré, L. Chizat, F-X. Vialard, J. Solomon. Quantum Optimal Transport for Tensor Field Processing. Preprint Arxiv:1612.08731, 2016.
 
+References:
 ------
-Authors:
 
 - Gwendoline de Bie (ENS)
 - [Marco Cuturi](http://marcocuturi.net/) (ENSAE)

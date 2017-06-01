@@ -12,7 +12,8 @@ Python toolbox to compute and differentiate Optimal Transport (OT) distances. It
 
 ![Typical example of usage: Sinkhorn for density fitting](img/fig-general.jpg)
 
-<img src="img/fig-general.jpg" width="600" alt="Typical example of usage: Sinkhorn for density fitting"/>
+
+<img src="img/fig-general.jpg" width="100%" alt="Typical example of usage: Sinkhorn for density fitting" align="middle"/>
 
 Organization
 ------

@@ -41,16 +41,25 @@ Current implementations are available using the following automatic-differentiat
 References:
 ------
 
-1. Marco Cuturi,  Sinkhorn Distances: Lightspeed Computation of Optimal Transport, NIPS 2013
-2. N. Bonneel, G. Peyré, M. Cuturi. Wasserstein Barycentric Coordinates: Histogram Regression Using Optimal Transport. ACM Transactions on Graphics (Proc. SIGGRAPH 2016), 35(4), pp. 71:1–71:10, 2016.
-3. A. Rolet, M. Cuturi, G. Peyré. Fast Dictionary Learning with a Smoothed Wasserstein Loss. In Proc. AISTATS'16, pp. 630–638, 2016.
-4. G. Peyré, M. Cuturi, J. Solomon. Gromov-Wasserstein Averaging of Kernel and Distance Matrices. In Proc. ICML'16, pp. 2664–2672, 2016.
-5. J. Solomon, F. de Goes, G. Peyré, M. Cuturi, A. Butscher, A. Nguyen, T. Du, L. Guibas. Convolutional Wasserstein Distances: Efficient Optimal Transportation on Geometric Domains. ACM Transactions on Graphics (Proc. SIGGRAPH 2015), 34(4), pp. 66:1–66:11, 2015.
-6. M. Cuturi, M. Blondel, Soft-DTW: A Differentiable Loss Function for Time Series, ICML 2017.
-7. L. Chizat, G. Peyré, B. Schmitzer, F-X. Vialard. Scaling Algorithms for Unbalanced Transport Problems. Preprint Arxiv:1607.05816, 2016.
-8. Sinkhorn-AutoDiff: Tractable Wasserstein Learning of Generative Models, Aude Genevay, Gabriel Peyré, Marco Cuturi, Arxiv, 2017
-9. Optimal Transport for Diffeomorphic Registration, Jean Feydy, Benjamin Charlier, Francois-Xavier Vialard, Gabriel Peyré, MICCAI 2017.
-10. G. Peyré, L. Chizat, F-X. Vialard, J. Solomon. Quantum Optimal Transport for Tensor Field Processing. Preprint Arxiv:1612.08731, 2016.
+[1] Marco Cuturi,  Sinkhorn Distances: Lightspeed Computation of Optimal Transport, NIPS 2013
+
+[2] N. Bonneel, G. Peyré, M. Cuturi. Wasserstein Barycentric Coordinates: Histogram Regression Using Optimal Transport. ACM Transactions on Graphics (Proc. SIGGRAPH 2016), 35(4), pp. 71:1–71:10, 2016.
+
+[3] A. Rolet, M. Cuturi, G. Peyré. Fast Dictionary Learning with a Smoothed Wasserstein Loss. In Proc. AISTATS'16, pp. 630–638, 2016.
+
+[4] G. Peyré, M. Cuturi, J. Solomon. Gromov-Wasserstein Averaging of Kernel and Distance Matrices. In Proc. ICML'16, pp. 2664–2672, 2016.
+
+[5] J. Solomon, F. de Goes, G. Peyré, M. Cuturi, A. Butscher, A. Nguyen, T. Du, L. Guibas. Convolutional Wasserstein Distances: Efficient Optimal Transportation on Geometric Domains. ACM Transactions on Graphics (Proc. SIGGRAPH 2015), 34(4), pp. 66:1–66:11, 2015.
+
+[6] M. Cuturi, M. Blondel, Soft-DTW: A Differentiable Loss Function for Time Series, ICML 2017.
+
+[7] L. Chizat, G. Peyré, B. Schmitzer, F-X. Vialard. Scaling Algorithms for Unbalanced Transport Problems. Preprint Arxiv:1607.05816, 2016.
+
+[8] Sinkhorn-AutoDiff: Tractable Wasserstein Learning of Generative Models, Aude Genevay, Gabriel Peyré, Marco Cuturi, Arxiv, 2017
+
+[9] Optimal Transport for Diffeomorphic Registration, Jean Feydy, Benjamin Charlier, Francois-Xavier Vialard, Gabriel Peyré, MICCAI 2017.
+
+[10] G. Peyré, L. Chizat, F-X. Vialard, J. Solomon. Quantum Optimal Transport for Tensor Field Processing. Preprint Arxiv:1612.08731, 2016.
 
 Authors:
 ------
@@ -61,6 +70,7 @@ Authors:
 - [Aude Genevay](https://audeg.github.io/) (ENS)
 - [Gabriel Peyré](http://www.gpeyre.com/) (CNRS and ENS)
 - [Morgan Schmitz](http://www.cosmostat.org/people/mschmitz/) (CEA)
+- [Francois-Xavier Vialard](https://www.ceremade.dauphine.fr/~vialard/) (Paris-Dauphine)
 - ...
 
 

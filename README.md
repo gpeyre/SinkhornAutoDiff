@@ -29,7 +29,6 @@ Planed Features
 - Barycenters [7].
 - Gromov-Wasserstein [4].
 - Dictionary learning [3].
-- Dynamic time warping [6].
 
 
 Installation
@@ -80,5 +79,6 @@ Links
 
 - [Python Optimal Transport library](https://github.com/rflamary/POT)
 - [Mathematical coffees: Optimal Transport Meets Machine Learning](https://mathematical-coffees.github.io/mc01-ot/)
+- [Soft Dynamic time warping](https://github.com/mblondel/soft-dtw) [6].
 
 Copyright (c) 2017 Noria's team

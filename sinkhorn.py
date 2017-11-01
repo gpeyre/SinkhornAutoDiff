@@ -16,7 +16,7 @@ def sinkhorn_loss(x,y,epsilon,n,niter) :
 	niter is the max. number of steps in sinkhorn loop
 	"""
 	# The Sinkhorn algorithm takes as input three variables :
-	C = _squared_distances(x, y) # Wasserstein cost function
+	C = cost_matrix(x, y) # Wasserstein cost function
 
 	# both marginals are fixed with equal weights
 	mu = Variable(1./n*torch.cuda.FloatTensor(n).fill_(1),requires_grad=False) 
@@ -64,7 +64,7 @@ def sinkhorn_loss(x,y,epsilon,n,niter) :
 	
 	return cost 
 
-def _distances(x, y,p=2) :
+def cost_matrix(x, y,p=2) :
 	"Returns the matrix of $|x_i-y_j|^p$."
 	x_col = x.unsqueeze(1) 
 	y_lin = y.unsqueeze(0) 

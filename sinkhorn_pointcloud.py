@@ -1,3 +1,11 @@
+#!/usr/bin/env python
+"""
+sinkhorn_pointcloud.py
+
+Discrete OT : Sinkhorn algorithm for point cloud marginals.
+
+"""
+
 import torch
 from torch.autograd import Variable
 
@@ -18,17 +26,19 @@ def sinkhorn_loss(x, y, epsilon, n, niter):
     """
 
     # The Sinkhorn algorithm takes as input three variables :
-    C = cost_matrix(x, y)  # Wasserstein cost function
+    C = Variable(cost_matrix(x, y))  # Wasserstein cost function
 
     # both marginals are fixed with equal weights
-    mu = Variable(1. / n * torch.cuda.FloatTensor(n).fill_(1), requires_grad=False)
-    nu = Variable(1. / n * torch.cuda.FloatTensor(n).fill_(1), requires_grad=False)
+    # mu = Variable(1. / n * torch.cuda.FloatTensor(n).fill_(1), requires_grad=False)
+    # nu = Variable(1. / n * torch.cuda.FloatTensor(n).fill_(1), requires_grad=False)
+    mu = Variable(1. / n * torch.FloatTensor(n).fill_(1), requires_grad=False)
+    nu = Variable(1. / n * torch.FloatTensor(n).fill_(1), requires_grad=False)
 
     # Parameters of the Sinkhorn algorithm.
     rho = 1  # (.5) **2          # unbalanced transport
     tau = -.8  # nesterov-like acceleration
     lam = rho / (rho + epsilon)  # Update exponent
-    thresh = 10 ** (-1)  # stopping criterion
+    thresh = 10**(-1)  # stopping criterion
 
     # Elementary operations .....................................................................
     def ave(u, u1):
@@ -53,16 +63,16 @@ def sinkhorn_loss(x, y, epsilon, n, niter):
         u = epsilon * (torch.log(mu) - lse(M(u, v)).squeeze()) + u
         v = epsilon * (torch.log(nu) - lse(M(u, v).t()).squeeze()) + v
         # accelerated unbalanced iterations
-        # u = ave( u, lam * ( epsilon * ( torch.log(mu.unsqueeze(1)) - lse(M(u,v))   ) + u ) )
-        # v = ave( v, lam * ( epsilon * ( torch.log(nu.unsqueeze(1)) - lse(M(u,v).t()) ) + v ) )
+        # u = ave( u, lam * ( epsilon * ( torch.log(mu) - lse(M(u,v)).squeeze()   ) + u ) )
+        # v = ave( v, lam * ( epsilon * ( torch.log(nu) - lse(M(u,v).t()).squeeze() ) + v ) )
         err = (u - u1).abs().sum()
 
         actual_nits += 1
-        if (err < thresh).data.cpu().numpy():
+        if (err < thresh).data.numpy():
             break
     U, V = u, v
     pi = torch.exp(M(U, V))  # Transport plan pi = diag(a)*K*diag(b)
-    cost = torch.sum(Gamma * C)  # Sinkhorn cost
+    cost = torch.sum(pi * C)  # Sinkhorn cost
 
     return cost
 
